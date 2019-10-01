@@ -1,16 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import SideBar from './components/SideBar';
+import Main from './components/Main';
 
-import "./styles.css";
+import './styles/index.css';
+import './styles/tailwind.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div className="flex h-screen">
+      <SideBar />
+      <Main />
     </div>
   );
 }
 
-const rootElement = document.getElementById("root");
+const rootElement = document.getElementById('root');
 ReactDOM.render(<App />, rootElement);
