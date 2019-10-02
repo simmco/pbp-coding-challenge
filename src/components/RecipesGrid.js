@@ -26,7 +26,7 @@ const RecipesGrid = ({ recipes, selectRecipe, selectedRecipeNames }) => {
                 </div>
               </div>
               <div>
-                <div className="text-indigo-500  pt-2">Ingredients</div>
+                <div className="text-indigo-500  pt-3">Ingredients</div>
                 <ul className="ingredients-grid list-disc px-4 py-1">
                   {recipe.ingredients.map(ingredient => (
                     <li className="font-medium">{ingredient}</li>
