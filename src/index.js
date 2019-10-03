@@ -8,21 +8,23 @@ import './styles/tailwind.css';
 
 function App() {
   const [selectedRecipeNames, setSelectedRecipeNames] = React.useState([]);
+
   const ingredientsFromSelection = recipes
     .filter(recipe => selectedRecipeNames.includes(recipe.name))
     .flatMap(recipe => recipe.ingredients);
+
   const sortedIngredients = [...new Set(ingredientsFromSelection)].sort();
 
   const handleSelectRecipe = name => {
     setSelectedRecipeNames(
       selectedRecipeNames.includes(name)
-        ? selectedRecipeNames.filter(rec => rec !== name)
+        ? selectedRecipeNames.filter(recipe => recipe !== name)
         : [...selectedRecipeNames, name]
     );
   };
 
   return (
-    <div className="flex h-screen">
+    <div className="md:flex lg:flex xl:flex h-screen">
       <SideBar ingredients={sortedIngredients} />
       <Main
         recipes={recipes}
