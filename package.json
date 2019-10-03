@@ -1,8 +1,11 @@
 {
   "name": "pbp-coding-challenge",
+  "license": "MIT",
   "version": "1.0.0",
   "description": "",
-  "keywords": [],
+  "keywords": [
+    "recipes"
+  ],
   "main": "src/index.js",
   "dependencies": {
     "react": "16.8.6",
