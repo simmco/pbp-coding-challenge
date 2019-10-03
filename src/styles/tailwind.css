@@ -10656,6 +10656,11 @@ video {
           column-gap: 2rem;
 }
 
+.transition-box-shadow-300 {
+  -webkit-transition: box-shadow 300ms;
+  transition: box-shadow 300ms;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

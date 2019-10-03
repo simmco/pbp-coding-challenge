@@ -15,3 +15,7 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
 }
+
+.transition-box-shadow-300 {
+  transition: box-shadow 300ms;
+}
